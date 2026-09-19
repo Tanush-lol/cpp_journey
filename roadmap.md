@@ -29,7 +29,7 @@ functions -done
 struct  -done
 class -done 
 constructors -done
-- Move Constructor
+- Move Constructor - done
 destructors
 RAII
 inheritance
