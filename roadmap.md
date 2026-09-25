@@ -30,7 +30,7 @@ struct  -done
 class -done 
 constructors -done
 - Move Constructor - done
-destructors
+destructors - done
 RAII
 inheritance
 virtual functions
