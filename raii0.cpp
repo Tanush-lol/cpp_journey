@@ -35,8 +35,25 @@ int measureStringLength(const char *str){
   return length;
 }
 
-void initPerson(int age,char gender,const char *name,const char *nationality){
-  Person(age,gender,name,measureStringLength(name),nationality,measureStringLength(nationality));
+void initPerson(int age, char gender,
+                const char *name,
+                const char *nationality)
+{
+    try {
+        Person p(
+            age,
+            gender,
+            name,
+            measureStringLength(name),
+            nationality,
+            measureStringLength(nationality)
+        );
+
+        throw 20;
+    }
+    catch (int e) {
+        std::cout << "Caught: " << e << '\n';
+    }
 }
 
 
@@ -46,3 +63,5 @@ int main(){
 
   return 0;
 }
+
+// so we are throwing 20 right after init of class which should stop the code, the catch tries to find that but before that raii deletes the memory if we didn't it would leak the memory?
