@@ -31,10 +31,10 @@ class -done
 constructors -done
 - Move Constructor - done
 destructors - done
-RAII
-inheritance
-virtual functions
-STL
+RAII - done
+inheritance - done
+virtual functions - done
+STL - done
 iterators
 algorithms
 exceptions
