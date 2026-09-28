@@ -34,7 +34,7 @@ destructors - done
 RAII - done
 inheritance - done
 virtual functions - done
-STL - done
+STL - 
 iterators
 algorithms
 exceptions
