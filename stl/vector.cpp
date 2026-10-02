@@ -1,12 +1,14 @@
 #include <iostream>
 #include <vector>
 
-void printVector(std::vector<int> v){
+template <typename T>
+void printVector(std::vector<T> v){
   for(int i=0; i < v.size(); i++){
     std::cout<<i<<" - "<< v[i] <<"|";
   }
     std::cout<<'\n';
 }
+
 
 void popBackSafety(std::vector<int> *v){
   if(v->empty() == true){
@@ -85,6 +87,11 @@ int main(){
 
   int rowcount = arr.size();
   int columnCount = arr[1].size();
+
+  std::vector<std::vector<char>> nameChart(10,std::vector<char>(5,0));
+  std::cout<<"nameChart : "<<nameChart[0][0]<<'\n';
+  std::cout<<"arr size : "<<arr.size()<<'\n';
+  std::cout<<"arr size : "<<arr[1].size()<<'\n';
 
   return 0;
 }
